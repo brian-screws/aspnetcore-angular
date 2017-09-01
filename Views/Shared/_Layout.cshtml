@@ -13,5 +13,20 @@
     @RenderBody()
 
     @RenderSection("scripts", required: false)
+    <environment names="Development">
+        <script>
+            alert('Development!');
+        </script>
+    </environment>
+    <environment names="Staging">
+        <script>
+            alert('Staging!');
+        </script>
+    </environment>
+    <environment names="Production">
+        <script>
+            alert('Production!');
+        </script>
+    </environment>
 </body>
 </html>
